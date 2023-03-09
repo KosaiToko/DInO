@@ -1,0 +1,56 @@
+.game{
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+    background-image: url(/img/city.jpg);
+    background-size: 600px 200px;
+}
+#chicken{
+    width: 50px;
+    height: 50px;
+    background-image: url(/img/chicken.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+#cart{
+    width: 30px;
+    height: 40px;
+    background-image: url(/img/cart.png);
+    background-size: 30px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: cartMov 0.9s infinite linear;
+}
+@keyframes cartMov {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -25px;
+    }
+}
+
+.jump{
+    animation: jump 0.2s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30%{
+        top: 120px;
+    }
+    50%{
+        top: 90px;
+    }
+    70%{
+        top: 120px;
+    }
+    100% {
+        top: 150px;
+    }
+}
